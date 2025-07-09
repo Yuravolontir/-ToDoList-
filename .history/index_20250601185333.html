@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script type="module" src="./scripts/index.js"></script>
+</head>
+
+<body dir="rtl">
+    <h1>ניהול משימות</h1>
+    <section>
+        <section>
+            <button id="clear-completed">מחיקת המשימות שהושלמו</button>
+            <button id="clear-all">מחיקת כל המשימות</button>
+            <button id="save-todos">שמירת כל המשימות</button>
+            <button id="load-todos">טעינת כל המשימות</button>
+        </section>
+        <hr>
+        <form id="todo-form">
+            <input type="text" id="todo-title" placeholder="כותרת המשימה" required lang="he">
+            <textarea type="text" id="todo-description" placeholder="תיאור המשימה" required></textarea>
+            <input type="date" id="todo-date" required>
+            <select id="todo-priority" required>
+                <option value="" disabled selected>בחר עדיפות</option>
+                <option value="נמוכה">נמוכה</option>
+                <option value="בינונית">בינונית</option>
+                <option value="גבוהה">גבוהה</option>
+            </select>
+            <button type="submit">הוספה</button>
+        </form>
+        <h2>משימות לביצוע</h2>
+        <ul id="todo-list"></ul>
+        <hr>
+        <h2>משימות שהושלמו</h2>
+        <ul id="completed-todo-list"></ul>
+    </section>
+</body>
+
+</html>
