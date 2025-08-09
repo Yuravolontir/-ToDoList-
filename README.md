@@ -21,11 +21,12 @@
 ## 🚀 Getting Started
 
 To run the project locally:
-
+```bash
 git clone https://github.com/yourusername/list-tod0.git
 cd list-tod0
 npm install
 npm start
+```
 
 
 
